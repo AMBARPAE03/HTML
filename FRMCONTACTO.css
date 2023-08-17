@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(165, 218, 218);
+}
+header{
+    background-color: black !important;
+    border: 2px solid blue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+header img{
+    padding: 25px;
+}
+nav{
+    background-color: rgb(150, 243, 212);
+    border: 4px solid rgb(153, 218, 153);
+    border-radius: 22px;
+}
+nav p{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+section{
+    width: 40px;
+    border: 1px solid;
+}
