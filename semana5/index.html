@@ -6,9 +6,94 @@
     <title>WEB Reponsive</title>
     <!-- favicon paguina web -->
     <link rel="shortcut icon" href="img/HTML5.png" type="image/x-icon">
-    
+    <!-- link para pagina web fontawesome -->
+    <script src="https://kit.fontawesome.com/a1124a3708.js" crossorigin="anonymous"></script>
+    <!-- link de hoja de estilo css3 -->
+    <link rel="stylesheet" href="">
 </head>
 <body>
+    <div id="grid-container">
+        <!-- primera etiqueta contenedora -->
+        <header id="header">
+            <img src="./img/incap.png" alt="" width="100" height="100">
+            <h1>Escula de sistemas y diseño grafico</h1>
+            
+        </header>
+        <!-- etiqueta contenedora nav -->
+        <nav id="menu">
+            <ul>
+                <i class="fa-solid fa-graduation-cap"></i><li><a href="#">Programas</a></li>
+                <i class="fa-solid fa-user-graduate"></i> <li><a href="#">Estudiantes</a></li>
+                <i class="fa-solid fa-user"></i><li><a href="#">Ingrese</a></li>
+            </ul>
+            <div class="buscarbox">
+                <input type="text" placeholder="Buscar datos...">
+            </div>
+            <div id="reguser">
+                <i class="fa-solid fa-user-pen"></i><a href="#">Registrar</a>
+            </div>
+        </nav>
+        <!-- etiqueta contenedora seccion -->
+        <center>
+            <section id="main">
+                <figure>
+                    <img src="./img/HTML5.png" alt="" width="100" height="100">
+                    <img src="./img/css3.png" alt="" width="100" height="100">
+                    <img src="./img/JAVASCRIPT.png" alt="" width="100" height="100">
+                    <img src="./img/php.png" alt="" width="100" height="100">
+                    <img src="./img/mysql-logo2.jpg" alt="" width="100" height="100">
+                </figure>
+                <br>
+                <!-- seccion de escuelas de estudios -->
+                <!-- esta seccion es para colocar link a la paginas con su respectivos nombres e img-->
+                <article class="programa">
+                    <h1>Sistemas</h1>
+                    <a href="https://www.incap.edu.co/programas/auxiliar-en-operacion-de-programas-informaticos-y-bases-de-datos.html"><img src="./img/logo tecnologia.png" alt="" width="100" height="100"></a>
+                </article>
+                <article class="programa">
+                    <h1>Diseño Grafico</h1>
+                    <a href="https://www.incap.edu.co/programas/auxiliar-comunicacion-grafica-publicitaria.html"><img src="./img/logo diseno.png" alt="" width="100" height="100"></a>
+                </article>
+                <article class="programa">
+                    <h1>Contabilidad</h1>
+                    <a href="https://www.incap.edu.co/programas/auxiliar-en-contabilidad-y-finanzas.html"><img src="./img/logo negocios.png" alt="" width="100" height="100"></a>
+                </article>
+                <article class="programa">
+                    <h1>Seguridad Ocupacional</h1>
+                    <a href="https://www.incap.edu.co/programas/auxiliar-de-seguridad-en-el-trabajo.html"><img src="./img/logo industrial.png" alt="" width="100" height="100"></a>
+                </article>
+                <article class="programa">
+                    <h1>Enfermeri y salud Oral</h1>
+                    <a href="https://www.incap.edu.co/programas/auxiliar-en-enfermeria.htm"><img src="./img/logo salud.png" alt="" width="100" height="100"></a>
+                </article>
+                <article class="programa">
+                    <h1>Gastronomia</h1>
+                    <a href="https://www.incap.edu.co/programas/auxiliar-en-cocina-nacional-e-internacional.html"><img src="./img/logo gastronomia.png" alt="" width="100" height="100"></a>
+                </article>
+            </section>
+        </center>
+        <!-- barra de seccion lado izquierda -->
+        <aside id="sidebar">
+            <h1>Video de Interes</h1>
+            <br><br><br>
+            <h1>Aprende MYSQL</h1>
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/Q6sn6UMgR54?si=99-K6lW-OwzFG8rP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <br><br>
+            <h1>Aprende PHP</h1>
+            <iframe width="auto" height="auto" src="https://www.youtube.com/embed/nPCJAx5c1uE?si=6j3vXLDVW20T97fz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </aside>
+        <!-- Pie de pagina y enlaces -->
+        <footer id="footer">
+            <div id="redes">
+                <a href="https://es-la.facebook.com"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.twitter.com"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://web.whatsapp.com"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+            <p>Derecho reservados &Copf;@ambar2023</p>
+        </footer>
+    </div>
     
 </body>
 </html>
