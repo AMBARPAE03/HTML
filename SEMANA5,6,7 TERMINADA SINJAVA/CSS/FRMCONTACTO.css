@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(181, 165, 218);
+}
+header{
+    background-color: rgb(24, 23, 23) !important;
+    border: 2px solid blue;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+header img{
+    padding: 25px;
+}
+nav{
+    background-color: rgb(151, 150, 243);
+    border: 4px solid rgb(153, 218, 215);
+    border-radius: 22px;
+}
+nav p{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+section{
+    width: 40%;
+    border: 1px solid rgb(17, 16, 16);
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin: 10px auto;
+    background: linear-gradient(rgb(67, 91, 226),rgb(236, 121, 230));
+
+}
+form{
+    background-color: rgb(171, 128, 226);
+    width: 70%;
+    border-radius: 20px;
+    margin: 10px auto;
+    box-shadow: outset 0 0 10px purple;
+}
+fieldset{
+    border-style: none;
+}
+label{
+    font-size: 18px;
+}
+textarea{
+    resize: both;
+    max-height: 100px;
+}
+input:focus,textarea:focus{
+    border-color: rgb(20, 0, 255);
+    cursor:pointer;
+    box-shadow: inset 0 o 8px rgba(118, 123, 163, 0.6);
+    outline: 0 none;
+}
+/*estilo del boton*/
+form button{
+    width: 40%;
+    margin: 15px 0px 20px 25px;
+    height: 40px;
+    background: radial-gradient(rgb(175, 44, 187),black);
+    border: 2px solid rgb(48, 42, 42);
+    color: white;
+    border-radius: 15px;
+    
+}
+/*para el estilo del boton cuando colocas el cursor en el*/
+form button:hover{
+    background: radial-gradient(rgb(142, 142, 218),rgb(52, 9, 133));
+    text-decoration: underline;
+    color: black;
+    cursor: pointer;
+}
+form input{
+    height: 20px;
+    box-sizing: border-box;
+    color: rgba(20, 12, 94, 0.801);
+    outline: none;
+    border: 1px solid rgba(71, 20, 158, 0.925);
+}
+/*Seccion de estilo para el pie de la pag*/
+footer{
+    font-size:16px;
+    text-align: center;
+    color:darkorchid;
+}

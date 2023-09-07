@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    max-height: 100%;
+}
+body{
+    font-family: tahoma;
+    font-size: 18px;
+    background-image: url(../img/incap\ se\ invencible2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#header{
+    background-color: rgb(222, 198, 245);
+    border: 2px solid rgba(55, 15, 92, 0.349);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    grid-area: header; /* ccs grid*/
+}
+ul{
+    padding: 0 0;
+    margin: 0 1px;
+}
+li{
+    display: inline;
+    list-style: none;
+    margin: 0 5px;
+    font: bold 12px verdana;
+}
+a{
+    color: rgb(101, 231, 231);
+    text-decoration: none;
+}
+#menu{
+    grid-area: nav;
+    background-color: rgb(58, 32, 75);
+    border: 2px solid rgb(140, 140, 206);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+/* para el buscador tanto para acomodarlo como para darle estilo*/
+#buscarbox input{
+    height: 25px;
+    width: 0px;
+    padding: 0px 0px;
+    border-radius: 40px;
+    border: 0px;
+    padding-right: 50px;
+    transition: 0.8s ease;
+}
+#buscarbox input:hover{
+    width: 150px;
+    padding-left: 10px;
+    outline: none;
+}
+/*contenido principal*/
+#main{
+    grid-area: main;
+    background-color: rgba(225, 212, 231, 0.5);
+    border: 2px solid rgb(56, 36, 165);
+    max-width: 100%;
+    height: auto;
+    backdrop-filter: blur(5px)
+}
+figure{
+    display: inline;
+    margin: 45px;
+    padding: 5px;
+}
+.programa{
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    width: 45%;
+    height: 200px;
+    position: relative;
+    border: 1px solid rgb(143, 38, 153);
+    border-radius: 15 px;
+}
+section article{
+    background-color: rgba(205, 214, 248, 0.479);
+    backdrop-filter: blur(5px);
+    margin: 20px;
+}
+/* barra lateral*/
+#sidebar{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(205, 214, 248, 0.479);
+    backdrop-filter: blur(5px);
+}
+/*centra video*/
+iframe{
+    max-width: 100%;
+    height: auto;
+}
+#footer{
+    grid-area: footer;
+    padding-top: 20px;
+    border: 2px solid green;
+    border-radius: 20px;
+    clear: both;
+    background-color: rgba(205, 214, 248, 0.479);
+    backdrop-filter: blur(5px);
+}
+#redes a{
+    padding: 5px;
+    margin: 0px;
+}
+/*para cuando este el cursor en redes se agranden*/
+#redes a i:hover{
+    transform: scale(1.5);
+}
+/*estilos iconos*/
+i[class^="fab"]{
+    color: rgb(158, 203, 241);
+    font-size: 30px;
+    border: 1px solid transparent;
+    margin: 0px;
+}
+/*Seccion de CCS GRID en diseño web responsive ( celular,pc,table)*/
+/*definicion de contenedor para pc 3 columna*/
+#grid-container > * {
+text-align: center;
+box-shadow: 1px 1px 7px 0px rgba(227, 205, 248, 0.479);
+}
+#grid-container{
+    display:grid;
+    grid-gap: 10px;
+    /*----definidor de las 3 columnas------*/
+    grid-template: 
+    "header header header" 150px /*altura del header*/
+    "nav nav nav" 50px /*altura del nav*/
+    "main main sidebar" 300px
+    "main main sidebar" 300px
+    "main main sidebar" 250px
+    "footer footer footer" 150px /
+    1000px 150px 400px;
+    /*termia la altura */   
+}
+/*-----contenedor de Definicion table 2 columnas-----*/
+@media (max-width:1024px){
+    #grid-container{
+        grid-template:
+        "header haader" 170px
+        "nav main" 800px
+        "nav main"700px
+        "sidebar sidebar" 650px
+        "footer footer" 100px /
+        250px 450px;
+    }
+h1{
+    font-size: 75%;
+}
+#menu{
+    background-color: blue;
+    border-radius: 22px;
+    display: block;
+    padding: 45px;
+    margin:40px;
+    height: auto;
+    text-align: center;
+}
+#main{
+display: flex;
+flex-direction: column;/* cambia la forma de direccion de fila a col*/
+justify-content: space-between;
+align-items:center;
+flex-wrap: wrap;/*se define el auto ajuste de ancho dispostivo pasa a sgte. linea*/
+max-width:100%;
+   }
+   }
+   /*----Contenedor para celular---*/
+   @media(max-width:640px){
+    #grid-container{
+        grid-template: 
+        "header" 150px
+        "nav"50px
+        "main"1120px
+        "sidebar"800px
+        "footer"100px/
+        500px;
+        font-size: 60%;
+    }
+    /* ----FALTA EL MENU EL CUAL SE PROGRAMA CON JAVAS----- */
+    #menu{
+        display: none;
+    }
+    #main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        height: auto;
+      }
+ .programa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid black; 
+    }
+ iframe{
+    max-width: 100%;
+    height: auto;
+}
+#buscarbox{
+    display:none;
+}
+   }
