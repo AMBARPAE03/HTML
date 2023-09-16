@@ -1,0 +1,42 @@
+body{
+    /* color de la pagina */
+    background: linear-gradient(rgb(119, 207, 207),rgb(0, 34, 128));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+body h1{
+    /* color del titulo */
+    font-family: comic sans ms;
+    text-align: center;
+    color: rgb(37, 97, 185);
+}
+form table{
+    width: 60%;
+    margin: 2px auto;
+}
+/* subtitulo */
+form table caption{
+    font-size: 22px;
+    color: rgb(10, 76, 129);
+    padding: 15px;
+    font-weight: bold;
+}
+form table th, td{
+    width: 25%;
+    text-align: left;
+    vertical-align: top;
+    border: 2px solid #323e85;
+    padding: 5px;
+}
+/* botones */
+input{
+    background-color: rgb(214, 226, 228);
+    font-weight: bold;
+}
+input[type="submit"]{
+    background-color: rgb(189, 194, 236) !important;
+}
+input[type="reset"]{
+    background-color: rgb(189, 194, 236) !important;
+    }

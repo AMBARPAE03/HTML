@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario unico</title>
+    <link rel="stylesheet" href="./css/for_tabla.css">
+</head>
+<body>
+    <h1>CONTACTENOS</h1>
+    <br>
+    <form action="datos.php">
+        <table>
+            <caption>DATOS BASICOS DE USUARIOS</caption>
+            <tr><th>NOMBRE</th><td><input type="text" size="30" placeholder="INGRESE NOMBRE" required></td></tr>
+            <!-- termina -->
+            <tr><th>APELLIDOS</th><td><input type="text" size="40" placeholder="INGRESAR APELLIDOS" required></td></tr>
+            <!-- temina -->
+            <tr><th>GENERO</th><td><input type="radio"  name="GENERO" value="f">FEMENINO <input type="radio" name="GENERO" value="M">MASCULINO</td></tr>
+            <!-- termina seleccion de genero en forma de circulos -->
+            <tr><th>NIVEL DE ESTUDIOS</th><td><select><option>PRIMARIA</option><option>SECUNDARIA</option><option>TECNICO</option><option>TECNOLOGICO</option><option>PROFESIONAL</option></select></td></tr>
+            <!-- termina esta es en forma de lista con select -->
+            <tr><th>CONTRASEÑA</th><td><input type="password"></td></tr>
+            <!-- termina -->
+            <tr><th><input type="submit" value="Enviar"></th><td><input type="reset" value="Cancelar"></td></tr>
+        </table>
+    </form>
+</body>
+</html>
