@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'BenchNine', sans-serif;
+	font-family: 'Lobster', cursive;
 }
 li{
 	list-style: none;
@@ -17,7 +18,7 @@ h1, h2{
 
 /*header area*/
 .top-header{
-	background: #fff !important;
+	background: #885757 !important;
 	position: fixed;
 	width: 100%;
 	z-index: 99999;
@@ -60,7 +61,8 @@ ul.nav{
 }
 /* Esta regla de CSS se utiliza para modificar tamaño fuente en Menus opciones  */
 .navbar-default .navbar-nav>li>a {
- 	font-size: 24px;
+ 	/* cambiar los px si se descuadra fon-sizer*/
+	font-size: 20px;
 	color: #000;
 	text-transform: uppercase;
 	transition: all .7s ease 0s;
