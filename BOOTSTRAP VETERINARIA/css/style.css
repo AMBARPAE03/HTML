@@ -2,7 +2,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	font-family: 'Lobster', cursive;
+	font-family: 'Lobster', cursive;background-image: url(../img/cool-background.png);
 }
 li{
 	list-style: none;
@@ -281,6 +281,7 @@ li a.active{
 	background: url(../img/pattern.jpg);
 	background-repeat: repeat-y;
 	margin-top: 40px;
+	background-size: cover;
 }
 .service h2{
 	font-size: 90px;
@@ -458,7 +459,7 @@ li a.active{
 	padding: 25px 0;
 
 }
-.footer a i.fa{
+.footer a i.fa, i.fa-brands{
 	font-size: 24px;
 	color: #b1b1b1;
 	padding: 22px 10px;
