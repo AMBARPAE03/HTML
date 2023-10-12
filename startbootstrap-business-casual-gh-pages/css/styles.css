@@ -87,7 +87,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   :root {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth
   }
 }
 
@@ -10825,8 +10825,9 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/* foto de fondo de pantallas  */
 body {
-  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../assets/img/bg.jpg");
+  background-image: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url("../css/img/Make_up_Line_Pattern_1_01.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
