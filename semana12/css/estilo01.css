@@ -1,0 +1,73 @@
+h1
+{
+    text-align:center;
+    color:greenyellow;
+    font-size:26px;
+}
+
+body
+{
+    background-color: darkkhaki;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+table
+{
+   border-color:greenyellow;
+   border-style:solid;
+   margin:auto;
+   width:80%;
+   position:absolute;top:180px;
+}
+
+table caption
+{
+   text-align:center;
+   font-size:25px;
+   border-radius: 10px;
+   border-color:greenyellow;
+   border-style:solid;
+   background-color:goldenrod; 
+
+}
+table th
+{
+    border-color:greenyellow;
+    border-radius: 10px;
+    border-style:solid;
+    background-color:goldenrod; 
+    text-align:left;
+}
+
+table td
+{
+    border-color:greenyellow;
+    border-radius: 10px;
+    border-style:solid;
+    text-align:left;
+}
+
+p
+{
+   font-weight: bolder;
+   font-size:22px;
+}
+
+#bot
+{
+    display:block;
+    width:100px;
+    height:50px;
+    border-radius:15px;
+    background-color:blue;
+    color:white;
+       
+}
+
+#bot:hover
+{
+    background-color:chartreuse;
+    cursor:pointer;
+    box-shadow:0 1px red;
+}

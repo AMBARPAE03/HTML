@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- link de sitio sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="./css/img/WhatsApp Image 2023-10-12 at 9.18.39 AM.jpeg" alt="" width="150px" height="150px">
+        <h2>INGRESE /SALDO TARJETA TRANSMILENIO</h2>
+        <br>
+        <script>
+            let saldo;
+            const tm=2950;
+            //entrada
+            saldo=parseInt(prompt("ingrese saldo de su tarjeta TM"));
+            if(saldo>=tm){
+                swal("estimado usuario","ingrese al sistema TM","success");
+            }
+            else{
+                swal("estimado usuario","saldo insuficiente:Recargue tarjeta TM","ERROR")
+            }
+        </script>
+    </center>
+</body>
+</html>
