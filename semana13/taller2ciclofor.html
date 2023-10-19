@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- GREACION DE CLAVE CON INTENTOS DE TRES VECES SINO BLOQUEADA -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inicio de Sesion</title>
+    <!-- link de sitio Sweetalert mensajes más elegantes-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body> 
+    <center>
+        <img src="./img/WhatsApp Image 2023-10-19 at 7.13.21 AM.jpeg" alt="" width="150" height="150">
+        <h1>Ciclo for-if</h1>
+        <h2>Valiacion de Ingreso USUARIO</h2>
+        <br>
+        <script>
+            //variables de entradas
+            var pasw2; //password ingresado por usuario
+            var sw=0; //var controla ingreso tipo switche - apagada
+            var clave=123; //contiene contraseña oficial
+            // proceso
+            for(f=1;f<=3;f++)
+            {
+                pasw2=parseInt(prompt("INGRESE CONTRASEÑA DE INGRESO"));
+                if(pasw2==clave){
+                    swal("APRECIADO USUARIO","ACCESO OTROGADO","success");
+                    sw=1;
+                    break;
+                }
+            }
+            // SALIDA PANTALLA
+            if(sw==0){
+                swal("APRECIADO USUARIO","ACCESO BLOQUEADO","error");
+                document.write("<font color='red'size=14>BLOCKED ACCESS</font>");
+            }
+            else{
+                document.write("<font color='blue'size=14>GRANTED ACCESS</font>");
+            }
+        </script>
+    </center>
+</body>
+</html>

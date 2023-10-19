@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CICLO CON WHILE -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOLETIN NOTAS</title>
+    <!-- link de sitio Sweetalert mensajes más elegantes-->
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <center>
+        <img src="./img/WhatsApp Image 2023-10-19 at 7.13.21 AM.jpeg" alt="" width="150" height="150">
+        <h1>BOLETIN DE NOTAS</h1>
+        <h2>MATERIA PAE03_JAVASCRIPT</h2>
+        <h3>NOTAS [1=DESEMPEMPEÑO,2=TALLERES,3=EXAMENES]</h3>
+        <script>//variables
+            let nota_std, suma, prom;
+            suma=0;
+            prom=0;
+            num=1;
+            //entrada
+            nomb_std=prompt("INGRESE NOMBRE ESTUDIANTE");
+            //proceso ciclo while de tres notas
+            while(num<=3)
+            {
+                nota_std=parseFloat(prompt("ingrese nota: [1a5]"));
+                //acumilador: notas 
+                suma+=nota_std;
+                //contador de notas
+                num++;
+            }
+            //
+            prom=suma/(num-1);
+            //valida calificacion
+            if(prom>=3){
+                swal("APRECIADO ESTUDIAMTE","APROBO MATERA PAE","success");
+            }
+            else
+            {
+                swal("APRECIADO ESTUDIAMTE","REPROBO MATERA PAE","error");
+            }
+            document.write("************************************************"+"<br>");
+            document.write("<font color='blue'size=14>ESTUDIANTE:"+nomb_std+"<br>"+"<br>");
+            document.write("<font color='red'size=14>NOTAS FINALES DE PROGRAMA MATERIA PAE..."+prom.toFixed(2)+"<br>");
+            document.write("************************************************"+"<br>");
+            </script>
+    </center>
+</body>
+</html>
