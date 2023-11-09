@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width-device-width, intial-scale-1.0">
+    <title>SIMULADOR</title>
+    <link rel="stylesheet" href="./CSS/SIMULADOR.css">
+    <script src="SIMULADOR JS.js"></script>
+</head>
+<body>
+    <center>
+        <img src="./IMG/LOGO NUBANK.jpeg" alt="" width="150" height="150">
+        <div class="container">
+            <form action="" class="form">
+                <h2>SIMULADOR PRESTAMO</h2>
+                <label for="Nota1">VALOR CREDITO</label>
+                <input type="text" id="ValorC" class="box">
+
+                <label for="Nota2">NUMERO DE CUOTAS MENSUALES</label>
+                <input type="text" id="NumC" class="box">
+
+                <label for="Nota3">TASA DE INTERES MENSUAL</label>
+                <input type="text" id="Interes" class="box">
+
+                <label for="Def">VALOR CUOTA A PAGAR MES</label>
+                <input type="text" id="ValorA" class="box" disabled>
+
+                <label for="Def">VALOR TOTAL PRESTAMOS A PAGAR</label>
+                <input type="text" id="ValorB" class="box" disabled>
+
+                <input type="button" value="CALCULAR" class="submit" onclick="calcular()">
+                <input type="reset" value="LIMPIAR" class="submit" onclick="limpiar()">
+
+            <form>
+        </div>
+    </center>
+</body>
+</html>
