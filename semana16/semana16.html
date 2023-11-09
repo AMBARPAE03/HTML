@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA  FOR</title>
+    <link rel="stylesheet" href="./CSS/formulario16.css">
+    <script src="./js/formulrio select.js"></script>
+</head>
+<body>
+    <br><br>
+    <h1>CALCULADORA BASICA</h1>
+    <form action="">
+        <!-- marco de formulario con filas y columnas con su nombres -->
+        <fieldset>
+            <!-- columna -->
+            <table id="table1">
+                <tr><th>numero 1:</th><td> <input type="text" id="n1" name="num1" size="40" max="20" placeholder="=INGRESE NUM 1"></td</tr>
+                    <tr><th>numero 2:</th><td> <input type="text" id="n2" name="n2" size="40" max="20" placeholder="=INGRESE NUM 2"></td</tr>
+                        <!-- seleccion por lista con nombre (name) y su aidi(id) -->
+                        <tr><th>SELECIONE OPERACION MATEMATICA</th><td><select name="operac" id="op">
+                            <option>suma</option>
+                            <option>resta</option>
+                            <option>multiplicar</option>
+                            <option>dividir</option>
+                        </select></td></tr>
+                        <!-- boton, id y onclick que cuando le aga una funcuion con su respuesta-->
+                        <tr><th><input type="button" value="CALCULAR" id="bot" onclick="liquidar()"></th><td><input type="button" value="borrar" id="bot"></td></tr>
+                        <tr><th>Resultado:</th><td><input type="text" name="" id="resp" size="40"></td></tr>
+            </table>
+        </fieldset>
+
+    </form>
+</body>
+</html>
