@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/caracter.css"><!-- css -->
+    <link rel="stylesheet" href=""><!-- css -->
+    <link rel="stylesheet" href=""><!-- css -->
+</head>
+<body>
+
+    <div class="wrapper">
+        <aside>
+            <header>
+                <h1 class="logo">CATEGORIAS</h1>
+            </header>
+            <nav>
+                <ul>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="../index.html"class="bi bi-cart-fill"> Inicio</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <button id="todos" class="boton-menu boton-categoria active"><i class="bi bi-hand-index-thumb-fill"></i> Todos los productos</button>
+                    </li>
+                    <li>
+                        <button id="Grano" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i> Granos</button>
+                    </li>
+                    <li>
+                        <button id="Fruta" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Frutas</button>
+                    </li>
+                    <li>
+                        <button id="Verdura" class="boton-menu boton-categoria"><i class="bi bi-hand-index-thumb"></i>Verduras</button>
+                    </li>
+                    <li>
+                        <a class="boton-menu boton-carrito" href="./carrito.html">
+                            <i class="bi bi-cart-fill"></i> Carrito <span id="numerito" class="numerito">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <footer>
+                <p class="texto-footer">© 2023 </p>
+                <br>
+                <p class="texto-footer">Selecciona todo lo que necesites</p>
+            </footer>
+        </aside>
+        <main>
+            <h2 class="titulo-principal" id="titulo-principal">Todos los productos</h2>
+            <div id="contenedor-productos" class="contenedor-productos">
+                <!-- Esto se va a rellenar con JS -->
+            </div>
+        </main>
+    </div>
+    
+    <script src="../js/seccion de compras.js"></script><!-- main.js -->
+    <script src=""></script><!-- main.js -->
+    <script src=""></script><!-- main.js -->
+</body>
+</html>
