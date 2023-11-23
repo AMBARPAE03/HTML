@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularrio de apuestas</title>
+    <link rel="stylesheet" href="./CSS/Untitled-1.css">
+    <script src="./JS/APUESTA.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Apuestas del numero aleatorio</h1>
+        <h2>Metodo math-random</h2>
+        <h3>Adivinar numero del 1 al 10</h3>
+        <br><br>
+        <form>
+            <label>numero apostado</label>
+            <input type="text" id="apostado" required><br>
+            <br><br>
+            <label>Numero rambom-sistema</label>
+            <input type="text" id="resultado" disabled><br>
+            <br><br>
+            <label>resultado apuesta</label>
+            <input type="text" id="salida" disabled><br>
+        </form>
+        <br><br>
+        <div id="boton">
+            <button onclick="apostar();">APOSTAR!!</button>
+            <button onclick="cancel();">BORRAR!!</button>
+        </div>
+    </center>
+</body>
+</html>
